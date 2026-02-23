@@ -1,0 +1,119 @@
+
+----------------------------------------------------------------------------------------------
+ProtTest 3.4.2                      Fast selection of the best-fit models of protein evolution
+(c) 2009-2016   Diego Darriba (1,2), Guillermo Taboada (2), Ramón Doallo (2), David Posada (1)
+(1)                               Facultad de Biologia, Universidad de Vigo, 36200 Vigo, Spain
+(2)                    Facultade de Informática, Universidade da Coruña, 15071 A Coruña, Spain
+----------------------------------------------------------------------------------------------
+Manual:                                    http://darwin.uvigo.es/download/prottest_manual.pdf
+Homepage:                                                 http://github.com/ddarriba/prottest3
+Discussion group:                                     https://groups.google.com/group/prottest
+Contact:                                                  ddarriba@h-its.org, dposada@uvigo.es
+----------------------------------------------------------------------------------------------
+
+Version:  3.4.2 : 8th May 2016
+Date:     Fri Jan 23 23:59:19 UTC 2026
+OS:       Linux (6.6.105+)
+Arch:     amd64
+Java:     17.0.17 (Ubuntu)
+PhyML:    /content/prottest-3.4.2/bin/PhyML_3.0_linux64
+
+Citation: Darriba D, Taboada GL, Doallo R, Posada D. ProtTest 3: fast selection of best-fit 
+          models of protein evolution. Bioinformatics, 27:1164-1165, 2011
+
+
+ProtTest options
+----------------
+  Alignment file........... : input_msa.phy
+  Tree..................... : BioNJ
+  StrategyMode............. : BIONJ Tree
+  Candidate models......... : 
+    Matrices............... : JTT LG MtREV Dayhoff WAG CpREV 
+    Distributions.......... : Uniform 
+    Observed frequencies... : false
+
+  Statistical framework
+    Sort models according to....: 
+       AICc 
+    Sample size.................: 290.0
+  Other options:
+    Display best tree in ASCII..: false
+    Display best tree in Newick.: false
+    Display consensus tree......: false
+    Verbose.....................: false
+
+**********************************************************
+Observed number of invariant sites: 12
+Observed aminoacid frequencies:
+ A: 0.089    C: 0.026    D: 0.028    E: 0.064    F: 0.035   
+ G: 0.087    H: 0.017    I: 0.058    K: 0.050    L: 0.094   
+ M: 0.021    N: 0.056    P: 0.029    Q: 0.023    R: 0.038   
+ S: 0.094    T: 0.070    V: 0.082    W: 0.015    Y: 0.023   
+
+**********************************************************
+
+Model................................ : JTT
+  Number of parameters............... : 205 (0 + 205 branch length estimates)
+ -lnL................................ = 19599.32
+     (seconds))
+
+Model................................ : LG
+  Number of parameters............... : 205 (0 + 205 branch length estimates)
+ -lnL................................ = 19684.76
+     (seconds))
+
+Model................................ : MtREV
+  Number of parameters............... : 205 (0 + 205 branch length estimates)
+ -lnL................................ = 20637.17
+     (seconds))
+
+Model................................ : Dayhoff
+  Number of parameters............... : 205 (0 + 205 branch length estimates)
+ -lnL................................ = 19997.97
+     (seconds))
+
+Model................................ : WAG
+  Number of parameters............... : 205 (0 + 205 branch length estimates)
+ -lnL................................ = 19642.42
+     (seconds))
+
+Model................................ : CpREV
+  Number of parameters............... : 205 (0 + 205 branch length estimates)
+ -lnL................................ = 19696.73
+     (seconds))
+
+************************************************************
+Date   :  Fri Jan 23 23:59:47 UTC 2026
+Runtime:  0h:00:28
+
+
+
+***************************************************************************
+Best model according to AICc: JTT
+Confidence Interval: 100.0
+***************************************************************************
+Model          deltaAICc      AICc           AICcw          -lnL           
+---------------------------------------------------------------------------
+JTT            0.00           40614.11       1.00           19599.32       
+WAG            86.21          40700.32       0.00           19642.42       
+LG             170.88         40784.99       0.00           19684.76       
+CpREV          194.83         40808.95       0.00           19696.73       
+Dayhoff        797.31         41411.42       0.00           19997.97       
+MtREV          2075.70        42689.81       0.00           20637.17       
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+***********************************************
+Relative importance of parameters
+***********************************************
+  alpha       (+G):     No +G models
+  p-inv       (+I):     No +I models
+  alpha+p-inv (+I+G):   No +I+G models
+  freqs       (+F):     No +F models
+
+***********************************************
+Model-averaged estimate of parameters
+***********************************************
+  alpha (+G):           No +G models
+  p-inv (+I):           No +I models
+  alpha (+I+G):         No +I+G models
+  p-inv (+I+G):         No +I+G models
